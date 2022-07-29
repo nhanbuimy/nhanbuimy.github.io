@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!--<link href="css/bai03.css" rel="stylesheet"/>-->
+    <title>Programming Language</title>
+    <style>
+        header > h1 {
+            text-align: center;
+            text-transform: uppercase;/*in hoa*/
+        }
+        ul.menu {/*tất cả thành phần ul có thuộc tính class=menu*/
+            list-style-type: none;/*bỏ kí tự đánh dấu danh sách k có thứ tự*/
+            margin: 0;
+            padding: 0;
+            background-color: lightblue;/*tô mâu*/
+            display: flex;/*giúp các thành phần hiển thị linh hoạt hơn, làm cho nó co lại sthành 1 hàng ngang*/
+        }
+        ul.menu > li {/*tất cả các li bên trong (ul có thuộc tính class= menu*/
+            border-left: 1px solid white;/*tạo đường biên nằm bên trái*/
+            text-align: center;/*căn giữa chữ trong boder*/
+            min-width: 150px;/*độ rộng nhỏ nhất dành cho chữ*/
+            
+        }
+        ul.menu > li > a {
+            display: block;/*Thành phần hiển thị như một khối, đứng một hàng độc lập so với thành phần trước và sau nó.*/
+            padding: 18px 25px;/*khoảng cách từ chữ đến vòng ngoài màu xanh lá(dạng block) top=bot=18 right=left=25 */
+            text-decoration: none;/*Định dạng không gạch chân đường link liên kết*/
+        }
+        ul.menu > li > a:hover {/*Hover qua link sẽ thấy được hiệu ứng*/
+            background-color: darkblue;
+            color: white;
+        }
+        ul.menu > li:last-child {/*chọn thành phần cuối cùng của thành phần cha.
+            Chỉ chọn thành phần có thành phần cha, những thành phần độc lập sẽ không được chọn.*/
+            margin-left: auto;
+        }
+        /* tạo menu con */
+        .subcon {
+            display: none !important;/*Thành phần không hiển thị. và quan trọng nhất*/
+            position: absolute;/*Dùng để thiết lập vị trí của một phần tử nhưng nó sẽ luôn nằm trong một phần tử mẹ đang là relative.*/
+        }
+        .subs:hover .subcon {/*hover chọn, các thành phần khi di chuyển chuột qua chúng*/
+            display: block !important; /*Thành phần hiển thị như một khối, đứng một hàng độc lập so với thành phần trước và sau nó.*/
+        }
+        
+        
+        section.muchs { /*tất cả các thành phần của section có thuộc tính class=muchs */
+            background-color: lightgray;
+            margin-top: 20px; /* canh lề bên trên */
+        
+        }
+        
+        div.much{
+            overflow: auto; /*Khi chiều cao của box không đủ chứa text, thì text bị tràn sẽ được dấu đi và xuất hiện thanh scroll, khi cuộn sẽ hiển thị text. Khi sử dụng thành phần này sẽ xuất hiện cả thanh scroll ngang và dọc.*/
+            padding: 10px;/*khoảng cách của văn bản với đường biên*/
+            border-bottom: 2px solid blueviolet;/*Xác định đường viền bên dưới.*/
+        }
+        
+        
+        div.much img {
+            width: 150px;
+            float: left;/*chỉ định 1 thành phần nổi lên để tạo không gian trống cho các thành phần phía sau di chuyển lên và chiếm chổ trống đó*/
+            transition: transform .5s;/* hiệu ứng sự thay đổi giá trị của 1 thuộc tính */
+        }
+        
+        
+        div.much img:hover {
+            transform: skew(20deg,45deg); /*dịch chuyển nghiêng ngang, dọc */
+        }
+        div.u {
+            margin-left: 10px !important;
+        }
+        .main {
+            width: 70%;
+            margin: 0 auto;
+        }
+        footer {
+            background-color: blue;
+            color: white;
+            text-align: center;
+        }
+        .codinh {
+            display: flex;
+        }
+        section.codinh h1{
+            border: 1px solid darkblue;
+            text-align: center;
+            padding: 200px 0;
+        }
+        section.codinh > h1:last-child {
+            margin-left: auto;
+        }
+
+    </style>
+</head>
+<body>
+    <header class="main">
+         <h1>programming language</h1>
+    </header>
+    <nav class="main">
+        <ul class="menu">
+            <li class="subs">
+                <a href="#Python">Python</a>
+                <ul class="menu subcon">
+                    <li>
+                        <a href="#">Python Core</a>
+                    </li>
+                    <li>
+                        <a href="#">Python Test</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="subs">
+                <a href="#Java">Java</a>
+                <ul class="menu subcon">
+                    <li>
+                        <a href="#">Java Core</a>
+                    </li>
+                    <li>
+                        <a href="#">Java Test</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="subs">
+                <a href="#C#">C#</a>
+                <ul class="menu subcon">
+                    <li>
+                        <a href="#">C# Core</a>
+                    </li>
+                    <li>
+                        <a href="#">C# Test</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="subs">
+                <a href="#C++">C++</a>
+                <ul class="menu subcon">
+                    <li>
+                        <a href="#">C++ Core</a>
+                    </li>
+                    <li>
+                        <a href="#">C++ Test</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#About us">About us</a>
+            </li>
+        </ul>
+    </nav>
+    <section class="codinh">
+        <h1>LIÊN HỆ QUẢNG CÁO</h1>
+        <h1>LIÊN HỆ QUẢNG CÁO</h1>
+    </section>
+    <section class=" main muchs">
+        <div class="much"> 
+            <div>
+                <img src="anh/python.jpg" alt="Python"/>
+            </div>
+            <div class="u">
+                Python is an easy to learn, powerful programming language. It has efficient high-level 
+data structures and a simple but effective approach to object-oriented programming. 
+Python’s elegant syntax and dynamic typing, together with its interpreted nature, 
+make it an ideal language for scripting and rapid application development in many 
+areas on most platforms.
+            </div>
+        </div>
+        <div class="much"> 
+            <div>
+                <img src="anh/java.png" alt="Python"/>
+            </div>
+            <div class="u">
+Java is a high-level programming language originally developed by Sun 
+Microsystems and released in 1995. Java runs on a variety of platforms, such as 
+Windows, Mac OS, and the various versions of UNIX.
+            </div>
+        </div>
+        <div class="much"> 
+            <div>
+                <img src="anh/download.png" alt="Python"/>
+            </div>
+            <div class="u">
+C# is a modern, general-purpose, object-oriented programming language developed 
+by Microsoft and approved by European Computer Manufacturers Association 
+(ECMA) and International Standards Organization (ISO).
+            </div>
+        </div>
+        <div class="much"> 
+            <div>
+                <img src="anh/c++.png" alt="Python"/>
+            </div>
+            <div class="u">
+C++ is a middle-level programming language developed by Bjarne Stroustrup starting 
+in 1979 at Bell Labs. C++ runs on a variety of platforms, such as Windows, Mac OS, 
+and the various versions of UNIX.
+            </div>
+        </div>
+    </section>
+    <footer class="main">
+        Programming Language &copy; 2017
+    </footer>
+</body>
+</html>
