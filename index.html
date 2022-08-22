@@ -7,10 +7,16 @@
     <title>Trường THPT Dương Bạch Mai</title>
     <link rel="stylesheet" href="CSS/THPT.css"/>
     <link href="anh/ou.png" rel="shortcut icon" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"/>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    
 </head>
 
 <body>
+    
     <header>
         <div class="container">
             <div class="logo"><img src="anh/thptbachmai.jpg"/></div>
@@ -18,19 +24,18 @@
             <div class="hinh"><img src="vidu/logotruong.jpg"/></div>
         </div>
     </header>
-
     <nav>
         <ul class="menu">
-            <li><a href="#">
+            <li><a href="#" title="Trang chủ">
                 <i class="fa fa-home"></i>
                 <span>TRANG CHỦ</span>
                 </a>
              </li>
 
              <li class="sub">
-                <a href="#gioithieu">
+                <a href="#gioithieu" title="Giới thiệu">
                     <i class="fa fa-mortar-board"></i>
-                    <span>GIỚI THIỆU</span><!--chuyên môn và các tổ, học bổng, hoạt động đoàn trường, nhà trường-->
+                    <span>GIỚI THIỆU</span>
                 </a>
                 <ul class="menu subcontent">
                     <li><a href="#">Ban giám hiệu</a></li>
@@ -40,7 +45,7 @@
              </li>
 
              <li class="sub">
-                <a href="#">
+                <a href="#" title="Tin tức-sự kiện">
                     <i class="fa fa-calendar"></i>
                 <span>TIN TỨC-SỰ KIỆN</span>
                 </a>
@@ -53,8 +58,8 @@
              </li>
             
              <li class="sub">
-                 <a href="#">
-                    <i class="fa fa-group"></i>
+                 <a href="#" title="Cuộc sống học đường">
+                    <i class="fa-solid fa-users"></i>
                 <span>CUỘC SỐNG HỌC ĐƯỜNG</span>
                 </a>
                 <ul class="menu subcontent">
@@ -68,8 +73,12 @@
                 </ul>
              </li>
 
-             <li><a href="#">
-                <i class="fa fa-phone"></i>
+
+             <!--dang nhap la lien he them-->
+
+             <li class="sub">
+                 <a href="#" title="Đăng nhập">
+                <i class="fa-solid fa-user-check"></i>
                 <span>LIÊN HỆ</span>
                 </a>
              </li>
@@ -83,11 +92,7 @@
                 </div>
              </li>
         </ul>
-</nav>
-
-
-
-
+    </nav>
 <article>
     <div class="act">
         <marquee direction="left"><h1>Chào mừng đến với trang thông tin điện tử trường THPT Dương Bạch Mai</h1></marquee>
@@ -101,24 +106,140 @@
     </div>
 </article>
 
-<div id="slideshow">
-    <div class="slide-wrapper">
-      <div class="slide"><img src="anh/python.jpg"></div>
-      <div class="slide"><img src="anh/java.png"></div>
-      <div class="slide"><img src="anh/c++.png"></div>
-    </div>
-</div>
 
-<section>
+    <div id="slideshow">
+        <div class="slide-wrapper">
+        <div class="slide"><img src="anh/python.jpg"></div>
+        <div class="slide"><img src="anh/java.png"></div>
+        <div class="slide"><img src="anh/c++.png"></div>
+        </div>
+    </div>
+<section class="con">
     <section>
         <div class="gioithieu">
             <h1>GIỚI THIỆU CHUNG</h1>
-            <p>Ngôi nhà chung Dương Bạch Mai luôn tự hào là nơi mỗi học sinh được học cách cho và nhận yêu thương, nơi mỗi học sinh luôn tự tin tỏa sáng, nơi là bệ phóng để mỗi học sinh xây dựng tương lai thành công. Với triết lý giáo dục hướng đến 5 giá trị cốt lõi: “Tôn trọng, Trách nhiệm, Yêu thương, Hợp tác, Sáng tạo”, nhà trường luôn hướng đến mục tiêu giáo dục: “Đào tạo những học sinh có phẩm chất, kiến thức, kĩ năng ngang tầm học sinh các nước tiên tiến trong khu vực, hòa nhập được với cộng đồng thế giới và trở thành công dân toàn cầu, có thể học tập và làm việc thành công ở Việt Nam cũng như ở các nước trên thế giới</p>
+            <p>Ngôi nhà chung Dương Bạch Mai luôn tự hào là nơi mỗi học sinh được học cách cho và nhận yêu thương, nơi mỗi học sinh luôn tự tin tỏa sáng, nơi là bệ phóng để mỗi học sinh xây dựng tương lai thành công. Với triết lý giáo dục hướng đến 5 giá trị cốt lõi: “Tôn trọng, Trách nhiệm, Yêu thương, Hợp tác, Sáng tạo”, nhà trường luôn hướng đến mục tiêu giáo dục: “Đào tạo những học sinh có phẩm chất, kiến thức, kĩ năng ngang tầm học sinh các nước tiên tiến trong khu vực, hòa nhập được với cộng đồng thế giới và trở thành công dân toàn cầu, có thể học tập và làm việc thành công ở Việt Nam cũng như ở các nước trên thế giới.</p>
         </div>
-    </section> 
-</section>
+    </section>
 
-<footer></footer>
 
+
+    <section class="con second">
+        <h2>đảng bộ trường thpt dương bạch mai</h2>
+        <p>
+            Đảng bộ nhà trường mà tiền thân là Chi bộ Trường THPT Dương Bạch Mai trực thuộc Đảng bộ khối các cơ quan tỉnh Bà Rịa - Vũng Tàu.  Chi bộ được thành lập ngày 28/10/1996, gồm có 09 đảng viên. Tháng 01/2015 chi bộ được nâng cấp thành Đảng bộ gồm 04 chi bộ trực thuộc. 20 năm qua, Đảng bộ đã bồi dưỡng kết nạp được 48 đảng viên, tổng số đảng viên hiện nay của Đảng bộ là 52 người. Trong những năm qua, Đảng bộ luôn giữ vai trò lãnh đạo toàn diện đơn vị, thành tích của nhà trường liên tục được duy trì và nâng cao, Đảng bộ liên tục được công nhận tổ chức TSVM, được Tỉnh ủy tặng Bằng khen.
+        </p>
+        <h2>Ban chấp hành đảng bộ - truyền hình giáo dục</h2>
+        <section class="consecond">
+            <table border="1">
+                <tr>
+                    <td>1 </td>
+                    <td>Đồng chí Lê Văn Thái </td>
+                    <td>Bí thư</td>
+                </tr>
+                <tr>
+                    <td>2 </td>
+                    <td>Đồng chí Phạm Thị Như Trang </td>
+                    <td>Phó Bí thư</td>
+                </tr>
+                <tr>
+                    <td>3 </td>
+                    <td>Đồng chí Phạm Thị Thanh Mai </td>
+                    <td>Ủy viên</td>
+                </tr>
+                <tr>
+                    <td>4 </td>
+                    <td>Đồng chí Nguyễn Công Hoan </td>
+                    <td>Ủy viên</td>
+                </tr>
+                <tr>
+                    <td>5 </td>
+                    <td>Đồng chí Nguyễn Ngọc Thái: </td>
+                    <td>Ủy viên</td>
+                </tr>
+                <tr>
+                    <td>6. </td>
+                    <td>Đồng chí Nguyễn Văn Tư </td>
+                    <td>Ủy viên</td>
+                </tr>
+                <tr>
+                    <td>7 </td>
+                    <td>Đồng chí Lê Quang Nhân </td>
+                    <td>Ủy viên</td>
+                </tr>
+            </table>
+            <iframe width="650" height="320" src="https://www.youtube.com/embed/Bud3Z3ul49U" title="Phan 1.1: Chuyên đề đổi mới giáo dục. THCS Nguyễn Văn Linh - BRVT" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </section>
+        <aside class="ads">
+            <div><h3 class="animate__animated animate__flipInX animate__infinite infinite">TIÊN HỌC LỄ</h3></div>
+            <div><h3 class="animate__animated animate__flipInX animate__infinite infinite">HẬU HỌC VĂN</h3></div>
+        </aside>
+
+        <h2>hoạt động đảng</h2>
+        <div class="hdd">
+            <div><img src="anh/daihoidaibieu.jpg" alt="ĐẠI HỘI ĐẠI BIỂU"/></div>
+            <div>
+                <h3>đại hội đại biểu đoàn trường thpt dương bạch mai nhiệm kỳ 2020 - 2021</h3> 
+                <div>Hòa chung không khí sôi nổi của Đoàn viên, thanh niên cả nước thi đua lập thành tích chào mừng Đại hội Đảng các cấp tiến tới Đại hội Đảng toàn quốc lần thứ XIII, được sự đồng ý của Đảng ủy trường THPT Dương Bạch Mai, Ban Thường vụ Đoàn khối, Đoàn Trường THPT Dương Bạch Mai đã tổ chức Đại hội Đại biểu Đoàn Trường nhiệm kỳ 2020 – 2021 và bầu ra Ban Chấp hành Đoàn trường nhiệm kỳ mới để tiếp tục lãnh đạo công tác Đoàn và phong trào thanh niên trong nhà trường...</div>
+            </div>
+        </div>
+        <div class="hdd">
+            <div><img src="anh/daihoidangbo.jpg" alt="ĐẠI HỘI ĐẢNG BỘ"/></div>
+            <div>
+                <h3>đại hội đảng bộ trường thpt dương bạch mai lần thứ viii, nhiệm kỳ 2020 - 2025</h3>
+                <p>Hòa chung trong không khí thi đua sôi nổi của toàn Đảng, toàn quân và toàn dân cả nước hướng đến chào mừng Đại hội Đảng Cộng sản Việt Nam Lần thứ XIII, hôm nay ngày 22 tháng 6 năm 2020, Đảng bộ trường THPT Dương Bạch Mai long trọng tổ chức Đại hội Đảng bộ Lần thứ VII, Nhiệm kỳ 2020 – 2025...</p>
+            </div>
+        </div>
+
+
+
+
+        <h2>hoạt động đoàn</h2>
+        <div class="hdd">
+            <div><img src="anh/doantruong.jpg" alt="HOẠT ĐỘNG ĐOÀN THỂ"/></div>
+            <div>
+                <h3>đoàn trường thpt dương bạch mai tổ chức chương trình kỷ niệm 91 năm thành lập đoàn tncs hồ chí minh (26/3/1931 - 26/3/2022) và lễ kết nạp đoàn viên - lớp đoàn viên chào mừng Đại hội Đoàn các cấp nhiệm kỳ 2022 - 2027</h3> 
+                <p>Ngày 23/03/2022, Đoàn Trường THPT Dương Bạch Mai đã tổ chức chương trình kỷ niệm 91 năm ngày thành lập Đoàn TNCS Hồ Chí Minh (26/3/1931-26/3/2022) và Lễ kết nạp Đoàn viên – Lớp đoàn viên chào mừng Đại hội Đoàn các cấp nhiệm kỳ 2022 – 2027. Nhằm đảm bảo công tác phòng chống dịch Covid-19, chương trình đã được thực hiện theo hình thức trực tiếp kết...</p>
+            </div>
+        </div>
+        <div class="hdd">
+            <div><img src="anh/ngaydoanvien.jpg" alt="NGÀY ĐOÀN VIÊN"/></div>
+            <div>
+                <h3>đoàn trường thpt dương bạch mai tổ chức hoạt động "ngày đoàn viên" nhân kỷ niệm 90 năm ngày thành lập đoàn tncs hồ chí minh (26/3/1931 - 26/3/2021)</h3>
+                <p>Ngày 20/3/2021, Đoàn Trường THPT Dương Bạch Mai đã tổ chức hoạt động “Ngày Đoàn viên”. Đây là hoạt động trong chuỗi hoạt động Tháng Thanh niên năm 2021 nhằm chào mừng thành công Đại hội Đảng toàn quốc lần thứ XIII và Kỷ niệm 90 năm ngày thành lập Đoàn TNCS Hồ Chí Minh (26/3/1931 – 26/3/2021). Hoạt động “Ngày Đoàn viên” có 3 hoạt động chính...</p>
+            </div>
+        </div>
+        <div class="hdd">
+            <div><img src="anh/tuhaothanhnien.jpg" alt="TỰ HÀO ĐOÀN VIÊN ĐOÀN TNCS HỒ CHÍ MINH"/></div>
+            <div>
+                <h3>đoàn trường thpt dương bạch mai tổ chức hội thi báo tường với chủ đề "tụ hào đoàn viên đoàn tncs hồ chí minh"</h3>
+                <p>Thực hiện chuỗi hoạt động Tháng Thanh niên năm 2021 nhằm chào mừng thành công Đại hội Đảng toàn quốc lần thứ XIII và kỷ niệm 90 năm ngày thành lập Đoàn TNCS Hồ Chí Minh (26/3/1931 – 26/3/2021), Đoàn trường THPT chuyên Nguyễn Du đã tổ chức Hội thi làm báo tường với chủ đề “Tự hào Đoàn viên Đoàn TNCS Hồ Chí Minh”...</p>
+            </div>
+        </div>
+        </div>
+    </section>
+
+
+
+
+
+</section>    
+<footer>
+    <div class="end">
+        <div>TRƯỜNG THPT DƯƠNG BẠCH MAI</div>
+        
+        <div>Địa chỉ: Xã Phước Hội, huyện Đất Đỏ, tỉnh Bà Rịa-Vũng Tàu</div>
+        <div>
+           Điện Thoại: 0254 3506381
+        </div>
+        <div>Email: thptduongbachmai@gmail.com</div>
+        <div>Website: thpt-duongbachmai.bariavungtau.edu.vn</div>
+    </div>
+</footer>
 </body>
 </html>
+
+
+<!--Email: thptduongbachmai@gmail.com
+Website: thpt-duongbachmai.bariavungtau.edu.vn
+Thiết kế bởi VNPT Bà Rịa - Vũng Tàu | Quản trị-->
